@@ -1,0 +1,1058 @@
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Hoolah'], 'campaignMessage': ['We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.'], 'deliveryTime': ['2024-09-19T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(max_length=255)
+    recipientEmail = CharField(max_length=255)
+    requestBy = IntegerField()
+Bad Request: /api/bulk/schedule/
+"POST /api/bulk/schedule/ HTTP/1.1" 400 142
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Hoolah'], 'campaignMessage': ['We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.'], 'deliveryTime': ['2024-09-19T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(max_length=255)
+    recipientEmail = CharField(max_length=255)
+    recipients = FileField()
+    requestBy = IntegerField()
+Bad Request: /api/bulk/schedule/
+"POST /api/bulk/schedule/ HTTP/1.1" 400 142
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Hoolah'], 'campaignMessage': ['We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.'], 'deliveryTime': ['2024-09-19T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Hoolah
+Message:: We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.
+Scheduled Time:: 2024-09-19T22:00
+Recipient Number:: 
+Recipient Email:: 
+Internal Server Error: /api/bulk/schedule/
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 41, in create
+    campaign = Campaigns(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Campaigns() got an unexpected keyword argument 'recipientFile'
+"POST /api/bulk/schedule/ HTTP/1.1" 500 99869
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Hoolah'], 'campaignMessage': ['We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.'], 'deliveryTime': ['2024-09-19T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Hoolah
+Message:: We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.
+Scheduled Time:: 2024-09-19T22:00
+Recipient Number:: 
+Recipient Email:: 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 522
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Hoolah'], 'campaignMessage': ['We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.'], 'deliveryTime': ['2024-09-19T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Hoolah
+Message:: We are inviting you to our hoolah party. Kindly join us celebrate my 25th birthday.
+Scheduled Time:: 2024-09-19T22:00
+Recipient Number:: 
+Recipient Email:: 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 530
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+<_csv.reader object at 0x1061adac0>
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+<_csv.reader object at 0x1098b2ba0>
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+"POST /api/bulk/schedule/ HTTP/1.1" 200 496
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+"POST /api/bulk/schedule/ HTTP/1.1" 200 497
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /api/bulk/schedule/
+"POST /api/bulk/schedule/ HTTP/1.1" 400 68481
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Champagne party'], 'campaignMessage': ['This is a test run. You are all invited.'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Champagne party
+Message:: This is a test run. You are all invited.
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+"POST /api/bulk/schedule/ HTTP/1.1" 200 497
+MSISDNS processed
+Recipient number is 557881327
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Campaign champagne'], 'campaignMessage': ['This is to notify everyone of the steady things ahead. Lock in. Its going to be a long ride.'], 'deliveryTime': ['2024-09-20T12:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Campaign champagne
+Message:: This is to notify everyone of the steady things ahead. Lock in. Its going to be a long ride.
+Scheduled Time:: 2024-09-20T12:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+"POST /api/bulk/schedule/ HTTP/1.1" 200 552
+Recipient number is 557881327
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Pito rearer'], 'campaignMessage': ['This is to pito rear things'], 'deliveryTime': ['2024-09-27T20:24'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Pito rearer
+Message:: This is to pito rear things
+Scheduled Time:: 2024-09-27T20:24
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+"POST /api/bulk/schedule/ HTTP/1.1" 200 480
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Always on thime'], 'campaignMessage': ['this is a text to show the number of high facility owners wrecking havoc on the terrain. This needs to stop.'], 'deliveryTime': ['2024-09-22T11:23'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Internal Server Error: /api/bulk/schedule/
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'recipients'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 28, in create
+    recipientList = request.FILES['recipients']
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'recipients'
+"POST /api/bulk/schedule/ HTTP/1.1" 500 99550
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Always on thime'], 'campaignMessage': ['this is a text to show the number of high facility owners wrecking havoc on the terrain. This needs to stop.'], 'deliveryTime': ['2024-09-22T11:23'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Internal Server Error: /api/bulk/schedule/
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'recipients'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 28, in create
+    recipientList = request.FILES['recipients']
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'recipients'
+"POST /api/bulk/schedule/ HTTP/1.1" 500 99538
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Always on thime'], 'campaignMessage': ['this is a text to show the number of high facility owners wrecking havoc on the terrain. This needs to stop.'], 'deliveryTime': ['2024-09-22T11:23'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Always on thime
+Message:: this is a text to show the number of high facility owners wrecking havoc on the terrain. This needs to stop.
+Scheduled Time:: 2024-09-22T11:23
+Recipient Number:: 0557881327
+Recipient Email:: 
+Internal Server Error: /api/bulk/schedule/
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'recipients'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 40, in create
+    if request.FILES['recipients'] != None:
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'recipients'
+"POST /api/bulk/schedule/ HTTP/1.1" 500 100949
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Always on thime'], 'campaignMessage': ['this is a text to show the number of high facility owners wrecking havoc on the terrain. This needs to stop.'], 'deliveryTime': ['2024-09-22T11:23'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'requestBy': ['6'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Always on thime
+Message:: this is a text to show the number of high facility owners wrecking havoc on the terrain. This needs to stop.
+Scheduled Time:: 2024-09-22T11:23
+Recipient Number:: 0557881327
+Recipient Email:: 
+Recipient file received 
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 575
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Campaign dizzy'], 'campaignMessage': ['I want to be able to eat things and eat plenty. I will eat a little of everything.'], 'deliveryTime': ['2024-09-28T12:48'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Campaign dizzy
+Message:: I want to be able to eat things and eat plenty. I will eat a little of everything.
+Scheduled Time:: 2024-09-28T12:48
+Recipient Number:: 0557881327
+Recipient Email:: 
+Internal Server Error: /api/bulk/schedule/
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'recipients'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 40, in create
+    if request.FILES['recipients'] != None:
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'recipients'
+"POST /api/bulk/schedule/ HTTP/1.1" 500 100868
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Campaign dizzy'], 'campaignMessage': ['I want to be able to eat things and eat plenty. I will eat a little of everything.'], 'deliveryTime': ['2024-09-28T12:48'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Campaign dizzy
+Message:: I want to be able to eat things and eat plenty. I will eat a little of everything.
+Scheduled Time:: 2024-09-28T12:48
+Recipient Number:: 0557881327
+Recipient Email:: 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 512
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Playtime'], 'campaignMessage': ['Bring your kids to the playground'], 'deliveryTime': ['2024-09-21T23:52'], 'recipientNumber': ['0269008514'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    requestBy = IntegerField()
+Data received::
+Title:: Playtime
+Message:: Bring your kids to the playground
+Scheduled Time:: 2024-09-21T23:52
+Recipient Number:: 0269008514
+Recipient Email:: 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 457
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Puto'], 'campaignMessage': ['Out of this world'], 'deliveryTime': ['2024-09-20T22:00'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'type': ['SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Puto
+Message:: Out of this world
+Scheduled Time:: 2024-09-20T22:00
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 476
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Capricon'], 'campaignMessage': ['Lets dress a capricon like a damsel'], 'deliveryTime': ['2024-09-29T21:06'], 'recipientNumber': ['0557881327'], 'recipientEmail': [''], 'recipients': ['undefined'], 'requestBy': ['6'], 'type': ['SMS']}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Capricon
+Message:: Lets dress a capricon like a damsel
+Scheduled Time:: 2024-09-29T21:06
+Recipient Number:: 0557881327
+Recipient Email:: 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 472
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Plenty things'], 'campaignMessage': ['a lot of things to do. Lets assemble'], 'deliveryTime': ['2024-09-21T13:07'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'type': ['EMAIL, SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Plenty things
+Message:: a lot of things to do. Lets assemble
+Scheduled Time:: 2024-09-21T13:07
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 511
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Plenty'], 'campaignMessage': ['In the garden'], 'deliveryTime': ['2024-09-21T21:13'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'type': ['SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Plenty
+Message:: In the garden
+Scheduled Time:: 2024-09-21T21:13
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 474
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Complete'], 'campaignMessage': ['Out of the blue'], 'deliveryTime': ['2024-09-20T21:18'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['6'], 'type': ['EMAIL, SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Complete
+Message:: Out of the blue
+Scheduled Time:: 2024-09-20T21:18
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+"POST /api/bulk/schedule/ HTTP/1.1" 200 485
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done

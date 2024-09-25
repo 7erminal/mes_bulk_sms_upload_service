@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 
-from bulk_sms.views import CampaignsView
+from bulk_sms.views import CampaignsView, GetCampaignsView
 
 router = routers.DefaultRouter()
 router.register(r'schedule', CampaignsView, basename='schedule-campaign')
@@ -27,5 +27,5 @@ router.register(r'schedule', CampaignsView, basename='schedule-campaign')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bulk/', include(router.urls)),
-    # path('onboard/get-business-details/', BusinessDetailsView.as_view({'get': 'retrieve'}), name='get-business-details'),
+    path('get-campaigns', GetCampaignsView.as_view({'get': 'retrieve'}), name='get-campaigns'),
 ]

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework import status, viewsets
 from bulk_sms.models import Campaigns
-from bulk_sms.serializers import CampaignResponseSerializer, CampaignRequestSerializer
+from bulk_sms.serializers import CampaignResponseSerializer, CampaignRequestSerializer, IdSerializer, CampaignsSerializer, CampaignsResponseSerializer
 from bulk_sms.models_existing import Users
 from bulk_sms.functions import file_processor
 import threading
@@ -80,3 +80,27 @@ class CampaignsView(viewsets.ViewSet):
             return Response(CampaignResponseSerializer(resp).data,status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST)
+        
+class GetCampaignsView(viewsets.ViewSet):
+    def retrieve(self, request):
+        serializer = IdSerializer(data=request.query_params)
+
+        logger.info("request received is ")
+        logger.info(request.query_params)
+
+        if serializer.is_valid(raise_exception=True):
+            id = serializer.data['id']
+            user = Users.objects.get(user_id=id)
+            queryset_data = Campaigns.objects.filter(created_by=user)
+            logger.info("Data returned for campaigns is ")
+            logger.info(queryset_data.values)
+            logger.info(CampaignsSerializer(queryset_data, many=True).data)
+
+            message = "Details added successfully. You will be notified once your request is processed."
+            status_ = 200
+            
+            resp = Resp(StatusDesc=message, StatusCode=status_, Result=queryset_data)
+
+            return Response(CampaignsResponseSerializer(resp).data, status=status.HTTP_202_ACCEPTED)
+        else:
+            return Response("Request Failed", status=status.HTTP_201_CREATED)

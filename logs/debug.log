@@ -1056,3 +1056,1023 @@ Recipient number is 252001110
 Recipient number inserted 
 252001110 processed
 Done
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/urls.py changed, reloading.
+Watching for file changes with StatReloader
+request received is 
+<QueryDict: {}>
+Bad Request: /api/get-campaigns/
+"GET /api/get-campaigns/ HTTP/1.1" 400 34
+request received is 
+<QueryDict: {}>
+Bad Request: /api/get-campaigns/
+"GET /api/get-campaigns/ HTTP/1.1" 400 34
+Not Found: /api/get-campaigns/3
+"GET /api/get-campaigns/3 HTTP/1.1" 404 2643
+Not Found: /api/get-campaigns/3
+"GET /api/get-campaigns/3 HTTP/1.1" 404 2643
+Not Found: /api/get-campaigns/3
+"GET /api/get-campaigns/3 HTTP/1.1" 404 2643
+Not Found: /api/get-campaigns/undefined
+"GET /api/get-campaigns/undefined HTTP/1.1" 404 2667
+Not Found: /api/get-campaigns/undefined
+"GET /api/get-campaigns/undefined HTTP/1.1" 404 2667
+Not Found: /api/get-campaigns/3
+"GET /api/get-campaigns/3 HTTP/1.1" 404 2643
+Not Found: /api/get-campaigns/3
+"GET /api/get-campaigns/3 HTTP/1.1" 404 2643
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/urls.py changed, reloading.
+Watching for file changes with StatReloader
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'StatusDesc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 105, in retrieve
+    return Response(CampaignResponseSerializer(resp).data, status=status.HTTP_202_ACCEPTED)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `StatusDesc` on serializer `CampaignResponseSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'StatusDesc'."
+"GET /api/get-campaigns?id=3 HTTP/1.1" 500 121310
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'StatusDesc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 105, in retrieve
+    return Response(CampaignResponseSerializer(resp).data, status=status.HTTP_202_ACCEPTED)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `StatusDesc` on serializer `CampaignResponseSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'StatusDesc'."
+"GET /api/get-campaigns?id=3 HTTP/1.1" 500 121310
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 95, in get_attribute
+    instance = instance[attr]
+KeyError: 'StatusDesc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 105, in retrieve
+    return Response(CampaignResponseSerializer(resp).data, status=status.HTTP_202_ACCEPTED)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `StatusDesc` on serializer `CampaignResponseSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'StatusDesc'."
+"GET /api/get-campaigns?id=3 HTTP/1.1" 500 121310
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 270
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 270
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 126
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet []>>
+[]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 126
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Pwalongo'], 'campaignMessage': ['Pwalongo district. Sending and receiving'], 'deliveryTime': ['2024-09-28T00:16'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['3'], 'type': ['SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Pwalongo
+Message:: Pwalongo district. Sending and receiving
+Scheduled Time:: 2024-09-28T00:16
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Internal Server Error: /api/bulk/schedule/
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 80, in create
+    return Response(CampaignResponseSerializer(resp).data,status.HTTP_200_OK)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+TypeError: 'Campaigns' object is not iterable
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+"POST /api/bulk/schedule/ HTTP/1.1" 500 116700
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Pwalongo'], 'campaignMessage': ['Pwalongo district. Sending and receiving'], 'deliveryTime': ['2024-09-28T00:16'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['3'], 'type': ['SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Pwalongo
+Message:: Pwalongo district. Sending and receiving
+Scheduled Time:: 2024-09-28T00:16
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+About to send response
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+"POST /api/bulk/schedule/ HTTP/1.1" 200 503
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 885
+CampaignRequestSerializer(data=<QueryDict: {'campaignName': ['Last gawkers'], 'campaignMessage': ['Message for the last gawkers. Come drink and party!'], 'deliveryTime': ['2024-09-28T05:42'], 'recipientNumber': [''], 'recipientEmail': [''], 'requestBy': ['3'], 'type': ['SMS'], 'recipients': [<InMemoryUploadedFile: bulk_sms.csv (text/csv)>]}>):
+    campaignName = CharField(max_length=255)
+    campaignMessage = CharField(max_length=500)
+    deliveryTime = CharField(max_length=255)
+    recipientNumber = CharField(allow_blank=True, allow_null=True, max_length=255)
+    recipientEmail = CharField(allow_blank=True, allow_null=True, max_length=255)
+    type = CharField(max_length=40)
+    requestBy = IntegerField()
+Data received::
+Title:: Last gawkers
+Message:: Message for the last gawkers. Come drink and party!
+Scheduled Time:: 2024-09-28T05:42
+Recipient Number:: 
+Recipient Email:: 
+Recipient file received 
+File is a csv file 
+About to send response
+MSISDNS processed
+Recipient number is 557881327
+"POST /api/bulk/schedule/ HTTP/1.1" 200 518
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['undefined']}>
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 93, in retrieve
+    user = Users.objects.get(user_id=id)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'user_id' expected a number but got 'undefined'.
+"GET /api/get-campaigns?id=undefined HTTP/1.1" 500 150822
+request received is 
+<QueryDict: {'id': ['undefined']}>
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 93, in retrieve
+    user = Users.objects.get(user_id=id)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'user_id' expected a number but got 'undefined'.
+"GET /api/get-campaigns?id=undefined HTTP/1.1" 500 150822
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['undefined']}>
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 93, in retrieve
+    user = Users.objects.get(user_id=id)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'user_id' expected a number but got 'undefined'.
+"GET /api/get-campaigns?id=undefined HTTP/1.1" 500 150822
+request received is 
+<QueryDict: {'id': ['undefined']}>
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 93, in retrieve
+    user = Users.objects.get(user_id=id)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'user_id' expected a number but got 'undefined'.
+"GET /api/get-campaigns?id=undefined HTTP/1.1" 500 150822
+request received is 
+<QueryDict: {'id': ['undefined']}>
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 93, in retrieve
+    user = Users.objects.get(user_id=id)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'user_id' expected a number but got 'undefined'.
+"GET /api/get-campaigns?id=undefined HTTP/1.1" 500 150822
+request received is 
+<QueryDict: {'id': ['undefined']}>
+Internal Server Error: /api/get-campaigns
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py", line 93, in retrieve
+    user = Users.objects.get(user_id=id)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/bedeabbe/Desktop/projects/python/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'user_id' expected a number but got 'undefined'.
+"GET /api/get-campaigns?id=undefined HTTP/1.1" 500 150822
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+request received is 
+<QueryDict: {'id': ['3']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (22)>, <Campaigns: Campaigns object (23)>, <Campaigns: Campaigns object (24)>]>>
+[OrderedDict([('campaignId', 22), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:17:04.937401Z'), ('recipient_file', '/media/recipients/bulk_sms_JEYf7qI.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:17:04.940923Z'), ('updated_at', '2024-09-25T00:17:04.940933Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 23), ('title', 'Pwalongo'), ('type', 'SMS'), ('message', 'Pwalongo district. Sending and receiving'), ('scheduledTime', '2024-09-25T00:18:10.329864Z'), ('recipient_file', '/media/recipients/bulk_sms_3zfx0ss.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:18:10.330918Z'), ('updated_at', '2024-09-25T00:18:10.330934Z'), ('active', 0), ('created_by', 3), ('updated_by', None)]), OrderedDict([('campaignId', 24), ('title', 'Last gawkers'), ('type', 'SMS'), ('message', 'Message for the last gawkers. Come drink and party!'), ('scheduledTime', '2024-09-25T00:37:42.592566Z'), ('recipient_file', '/media/recipients/bulk_sms_Nyejytq.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-09-25T00:37:42.595493Z'), ('updated_at', '2024-09-25T00:37:42.595510Z'), ('active', 0), ('created_by', 3), ('updated_by', None)])]
+"GET /api/get-campaigns?id=3 HTTP/1.1" 202 1280
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader

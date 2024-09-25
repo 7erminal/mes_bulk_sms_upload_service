@@ -2,6 +2,9 @@ from rest_framework import serializers
 from bulk_sms.models import Campaigns
 from bulk_sms.models_existing import Users
 
+class IdSerializer(serializers.Serializer):
+    id = serializers.CharField(max_length=25)
+
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
@@ -26,3 +29,8 @@ class CampaignResponseSerializer(serializers.Serializer):
     StatusDesc = serializers.CharField(max_length=255)
     StatusCode = serializers.IntegerField()
     Result = CampaignsSerializer()
+
+class CampaignsResponseSerializer(serializers.Serializer):
+    StatusDesc = serializers.CharField(max_length=255)
+    StatusCode = serializers.IntegerField()
+    Result = CampaignsSerializer(many=True)

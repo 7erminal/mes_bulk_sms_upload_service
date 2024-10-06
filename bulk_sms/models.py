@@ -7,7 +7,7 @@ class Campaigns(models.Model):
 	title = models.CharField(max_length=200, null=True, blank=True)
 	type = models.CharField(max_length=20, null=True, blank=True)
 	message = models.CharField(max_length=400, null=True, blank=True)
-	scheduledTime = models.DateTimeField(auto_now=True, null=True)
+	scheduledTime = models.DateTimeField(null=True)
 	recipient_file = models.FileField(upload_to='recipients', null=True, blank=True)
 	recipient_number = models.CharField(max_length=200, null=True, blank=True)
 	recipient_email = models.CharField(max_length=200, null=True, blank=True)

@@ -5,6 +5,9 @@ from bulk_sms.models import Campaigns
 from bulk_sms.serializers import CampaignResponseSerializer, CampaignRequestSerializer, IdSerializer, CampaignsSerializer, CampaignsResponseSerializer
 from bulk_sms.models_existing import Users
 from bulk_sms.functions import file_processor
+from dateutil import parser
+from datetime import datetime
+import time
 import threading
 import logging
 
@@ -22,7 +25,7 @@ class CampaignsView(viewsets.ViewSet):
     def create(self, request):
         serializer = CampaignRequestSerializer(data=request.data)
 
-        logger.info(serializer)
+        # logger.info(serializer)
 
         if serializer.is_valid(raise_exception=True):
             title = serializer.data['campaignName']
@@ -32,7 +35,17 @@ class CampaignsView(viewsets.ViewSet):
             recipientEmail = serializer.data['recipientEmail']
             type = serializer.data['type']
 
+
             logger.info("Data received::\nTitle:: "+title+"\nMessage:: "+message+"\nScheduled Time:: "+scheduledTime+"\nRecipient Number:: "+recipientNumber+"\nRecipient Email:: "+recipientEmail)
+
+            # formatedDate = parser.parse(scheduledTime)
+            # datetime_object = datetime(formatedDate)
+            # format_string = '%Y-%m-%d %H:%M:%S'
+            # date_string = datetime_object.strftime(format_string)
+            # logger.info("Formated date is ", date_string)
+            convertedDate = datetime.fromisoformat(scheduledTime)
+            # scheduledTime_object = datetime.strptime(convertedDate, '%y/%m/%dT%H:%M:%S')
+            logger.info(convertedDate)
 
             requestBy = serializer.data['requestBy']
 
@@ -44,7 +57,7 @@ class CampaignsView(viewsets.ViewSet):
                 campaign = Campaigns(
                         title = title,
                         message = message,
-                        scheduledTime = scheduledTime,
+                        scheduledTime = convertedDate,
                         recipient_number = recipientNumber,
                         recipient_email = recipientEmail,
                         type=type,
@@ -60,14 +73,16 @@ class CampaignsView(viewsets.ViewSet):
                         title = title,
                         message = message,
                         type=type,
-                        scheduledTime = scheduledTime,
+                        scheduledTime = convertedDate,
                         recipient_number = recipientNumber,
                         recipient_email = recipientEmail,
                         created_by = user
                 )
                 campaign.save()
 
-                
+            
+            with open("../bulk_sms_file_checker/recipients.txt", "a+") as file:
+                 file.write(str(campaign.campaignId)+" "+str(campaign.scheduledTime)+"\n")
 
         #   balanceObj = file_processor.processRecipientFile(recipientList)
 

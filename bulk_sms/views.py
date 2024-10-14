@@ -38,9 +38,9 @@ class CampaignsView(viewsets.ViewSet):
 
             logger.info("Data received::\nTitle:: "+title+"\nMessage:: "+message+"\nScheduled Time:: "+scheduledTime+"\nRecipient Number:: "+recipientNumber+"\nRecipient Email:: "+recipientEmail)
 
-            message = "Details added successfully. You will be notified once your request is processed."
+            respMessage = "Details added successfully. You will be notified once your request is processed."
             status_ = 200
-            
+
             # formatedDate = parser.parse(scheduledTime)
             # datetime_object = datetime(formatedDate)
             # format_string = '%Y-%m-%d %H:%M:%S'
@@ -73,7 +73,7 @@ class CampaignsView(viewsets.ViewSet):
                     t1 = threading.Thread(target=file_processor.processRecipientFile, args=(recipientList, campaign))
                     t1.start()
                 else:
-                    message = "Invalid file format."
+                    respMessage = "Invalid file format."
                     status_ = 400
             else:
                 campaign = Campaigns(
@@ -93,7 +93,7 @@ class CampaignsView(viewsets.ViewSet):
 
         #   balanceObj = file_processor.processRecipientFile(recipientList)
             
-            resp = Resp(StatusDesc=message, StatusCode=status_, Result=campaign)
+            resp = Resp(StatusDesc=respMessage, StatusCode=status_, Result=campaign)
             logger.info("About to send response")
 
             return Response(CampaignResponseSerializer(resp).data,status.HTTP_200_OK)

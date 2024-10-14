@@ -38,6 +38,9 @@ class CampaignsView(viewsets.ViewSet):
 
             logger.info("Data received::\nTitle:: "+title+"\nMessage:: "+message+"\nScheduled Time:: "+scheduledTime+"\nRecipient Number:: "+recipientNumber+"\nRecipient Email:: "+recipientEmail)
 
+            message = "Details added successfully. You will be notified once your request is processed."
+            status_ = 200
+            
             # formatedDate = parser.parse(scheduledTime)
             # datetime_object = datetime(formatedDate)
             # format_string = '%Y-%m-%d %H:%M:%S'
@@ -66,8 +69,12 @@ class CampaignsView(viewsets.ViewSet):
                 )
                 campaign.save()
 
-                t1 = threading.Thread(target=file_processor.processRecipientFile, args=(recipientList, campaign))
-                t1.start()
+                if recipientList.name.lower().endswith(".csv"):
+                    t1 = threading.Thread(target=file_processor.processRecipientFile, args=(recipientList, campaign))
+                    t1.start()
+                else:
+                    message = "Invalid file format."
+                    status_ = 400
             else:
                 campaign = Campaigns(
                         title = title,
@@ -85,9 +92,6 @@ class CampaignsView(viewsets.ViewSet):
                  file.write(str(campaign.campaignId)+" "+str(campaign.scheduledTime)+"\n")
 
         #   balanceObj = file_processor.processRecipientFile(recipientList)
-
-            message = "Details added successfully. You will be notified once your request is processed."
-            status_ = 200
             
             resp = Resp(StatusDesc=message, StatusCode=status_, Result=campaign)
             logger.info("About to send response")

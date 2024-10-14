@@ -10691,3 +10691,231 @@ Recipient number inserted
 Done
 /Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Data received::
+Title:: test campaign
+Message:: test aapmgain
+Scheduled Time:: 2024-10-14T12:13
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 12:13:00
+Recipient file received 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 469
+Data received::
+Title:: Holistic
+Message:: test message
+Scheduled Time:: 2024-10-14T14:06
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 14:06:00
+Recipient file received 
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 472
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+Data received::
+Title:: Bingo boo
+Message:: This is the test message
+Scheduled Time:: 2024-10-14T13:11
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 13:11:00
+Recipient file received 
+bulk_sms.csv
+File is a csv file 
+MSISDNS processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 473
+Recipient number inserted 
+557881327 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 258009909
+Recipient number inserted 
+258009909 processed
+Recipient number is 259950093
+Recipient number inserted 
+259950093 processed
+Recipient number is 249001928
+Recipient number inserted 
+249001928 processed
+Recipient number is 239950688
+Recipient number inserted 
+239950688 processed
+Recipient number is 268002830
+Recipient number inserted 
+268002830 processed
+Recipient number is 278993001
+Recipient number inserted 
+278993001 processed
+Recipient number is 208859689
+Recipient number inserted 
+208859689 processed
+Recipient number is 502291993
+Recipient number inserted 
+502291993 processed
+Recipient number is 208660200
+Recipient number inserted 
+208660200 processed
+Recipient number is 200392006
+Recipient number inserted 
+200392006 processed
+Recipient number is 245578118
+Recipient number inserted 
+245578118 processed
+Recipient number is 245578220
+Recipient number inserted 
+245578220 processed
+Recipient number is 552839966
+Recipient number inserted 
+552839966 processed
+Recipient number is 242228800
+Recipient number inserted 
+242228800 processed
+Recipient number is 273390002
+Recipient number inserted 
+273390002 processed
+Recipient number is 269893000
+Recipient number inserted 
+269893000 processed
+Recipient number is 245589200
+Recipient number inserted 
+245589200 processed
+Recipient number is 550066992
+Recipient number inserted 
+550066992 processed
+Recipient number is 557802331
+Recipient number inserted 
+557802331 processed
+Recipient number is 252001110
+Recipient number inserted 
+252001110 processed
+Done
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/functions/file_processor.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/bulk_sms/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/bedeabbe/Desktop/projects/python/mes_bulk_sms_upload_service/mes_bulk_sms_upload_service/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Data received::
+Title:: Test
+Message:: This is a test message
+Scheduled Time:: 2024-10-14T17:00
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 17:00:00
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 476
+Data received::
+Title:: Test
+Message:: This is a test message
+Scheduled Time:: 2024-10-14T17:00
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 17:00:00
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 484
+Data received::
+Title:: Test
+Message:: This is a test message
+Scheduled Time:: 2024-10-14T17:00
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 17:00:00
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 484
+Data received::
+Title:: Test
+Message:: This is a test message
+Scheduled Time:: 2024-10-14T17:00
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 17:00:00
+Recipient file received 
+recipients.csv
+File is a csv file 
+﻿Recipients processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 526
+Recipient number inserted 
+557881327 processed
+Recipient number is 557881324
+Recipient number inserted 
+557881324 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 269008517
+Recipient number inserted 
+269008517 processed
+Done
+Data received::
+Title:: This is a test
+Message:: This is a test message
+Scheduled Time:: 2024-10-14T16:03
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 16:03:00
+Recipient file received 
+recipients.csv
+File is a csv file 
+﻿Recipients processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 544
+Recipient number inserted 
+557881327 processed
+Recipient number is 557881324
+Recipient number inserted 
+557881324 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 269008517
+Recipient number inserted 
+269008517 processed
+Done
+Data received::
+Title:: Step on a stage
+Message:: the more I find myself
+Scheduled Time:: 2024-10-14T16:07
+Recipient Number:: 
+Recipient Email:: 
+2024-10-14 16:07:00
+Recipient file received 
+recipients.csv
+File is a csv file 
+﻿Recipients processed
+Recipient number is 557881327
+About to send response
+"POST /api/bulk/schedule/ HTTP/1.1" 200 545
+Recipient number inserted 
+557881327 processed
+Recipient number is 557881324
+Recipient number inserted 
+557881324 processed
+Recipient number is 269008514
+Recipient number inserted 
+269008514 processed
+Recipient number is 269008517
+Recipient number inserted 
+269008517 processed
+Done
+request received is 
+<QueryDict: {'id': ['8']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (9)>, <Campaigns: Campaigns object (10)>, <Campaigns: Campaigns object (11)>, <Campaigns: Campaigns object (12)>, <Campaigns: Campaigns object (13)>, <Campaigns: Campaigns object (14)>, <Campaigns: Campaigns object (15)>, <Campaigns: Campaigns object (16)>, <Campaigns: Campaigns object (17)>]>>
+[OrderedDict([('campaignId', 9), ('title', 'test campaign'), ('type', 'SMS'), ('message', 'test aapmgain'), ('scheduledTime', '2024-10-14T12:13:00Z'), ('recipient_file', '/media/recipients/bulk_sms.numbers'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T12:14:03.155718Z'), ('updated_at', '2024-10-14T12:14:03.155734Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 10), ('title', 'Holistic'), ('type', 'SMS'), ('message', 'test message'), ('scheduledTime', '2024-10-14T14:06:00Z'), ('recipient_file', '/media/recipients/bulk_sms_Yx2paEh.numbers'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T13:07:04.469304Z'), ('updated_at', '2024-10-14T13:07:04.469322Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 11), ('title', 'Bingo boo'), ('type', 'SMS'), ('message', 'This is the test message'), ('scheduledTime', '2024-10-14T13:11:00Z'), ('recipient_file', '/media/recipients/bulk_sms.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T13:10:39.464169Z'), ('updated_at', '2024-10-14T13:10:39.464183Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 12), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/8hbP6mE0-15452_480x.webp'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:00:13.938142Z'), ('updated_at', '2024-10-14T15:00:13.938274Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 13), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/8hbP6mE0-15452_480x_TV2txx3.webp'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:02:03.001183Z'), ('updated_at', '2024-10-14T15:02:03.001193Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 14), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/8hbP6mE0-15452_480x_v7DBiBW.webp'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:02:36.960134Z'), ('updated_at', '2024-10-14T15:02:36.960152Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 15), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/recipients.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:02:43.988654Z'), ('updated_at', '2024-10-14T15:02:43.988676Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 16), ('title', 'This is a test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T16:03:00Z'), ('recipient_file', '/media/recipients/recipients_nTH5t0P.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:03:44.175626Z'), ('updated_at', '2024-10-14T15:03:44.175652Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 17), ('title', 'Step on a stage'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T16:07:00Z'), ('recipient_file', '/media/recipients/recipients_P339sQg.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:08:05.426844Z'), ('updated_at', '2024-10-14T15:08:05.426859Z'), ('active', 0), ('created_by', 8), ('updated_by', None)])]
+"GET /api/get-campaigns?id=8 HTTP/1.1" 202 3671
+request received is 
+<QueryDict: {'id': ['8']}>
+Data returned for campaigns is 
+<bound method QuerySet.values of <QuerySet [<Campaigns: Campaigns object (9)>, <Campaigns: Campaigns object (10)>, <Campaigns: Campaigns object (11)>, <Campaigns: Campaigns object (12)>, <Campaigns: Campaigns object (13)>, <Campaigns: Campaigns object (14)>, <Campaigns: Campaigns object (15)>, <Campaigns: Campaigns object (16)>, <Campaigns: Campaigns object (17)>]>>
+[OrderedDict([('campaignId', 9), ('title', 'test campaign'), ('type', 'SMS'), ('message', 'test aapmgain'), ('scheduledTime', '2024-10-14T12:13:00Z'), ('recipient_file', '/media/recipients/bulk_sms.numbers'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T12:14:03.155718Z'), ('updated_at', '2024-10-14T12:14:03.155734Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 10), ('title', 'Holistic'), ('type', 'SMS'), ('message', 'test message'), ('scheduledTime', '2024-10-14T14:06:00Z'), ('recipient_file', '/media/recipients/bulk_sms_Yx2paEh.numbers'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T13:07:04.469304Z'), ('updated_at', '2024-10-14T13:07:04.469322Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 11), ('title', 'Bingo boo'), ('type', 'SMS'), ('message', 'This is the test message'), ('scheduledTime', '2024-10-14T13:11:00Z'), ('recipient_file', '/media/recipients/bulk_sms.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T13:10:39.464169Z'), ('updated_at', '2024-10-14T13:10:39.464183Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 12), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/8hbP6mE0-15452_480x.webp'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:00:13.938142Z'), ('updated_at', '2024-10-14T15:00:13.938274Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 13), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/8hbP6mE0-15452_480x_TV2txx3.webp'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:02:03.001183Z'), ('updated_at', '2024-10-14T15:02:03.001193Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 14), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/8hbP6mE0-15452_480x_v7DBiBW.webp'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:02:36.960134Z'), ('updated_at', '2024-10-14T15:02:36.960152Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 15), ('title', 'Test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T17:00:00Z'), ('recipient_file', '/media/recipients/recipients.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:02:43.988654Z'), ('updated_at', '2024-10-14T15:02:43.988676Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 16), ('title', 'This is a test'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T16:03:00Z'), ('recipient_file', '/media/recipients/recipients_nTH5t0P.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:03:44.175626Z'), ('updated_at', '2024-10-14T15:03:44.175652Z'), ('active', 0), ('created_by', 8), ('updated_by', None)]), OrderedDict([('campaignId', 17), ('title', 'Step on a stage'), ('type', 'SMS'), ('message', 'Details added successfully. You will be notified once your request is processed.'), ('scheduledTime', '2024-10-14T16:07:00Z'), ('recipient_file', '/media/recipients/recipients_P339sQg.csv'), ('recipient_number', ''), ('recipient_email', ''), ('created_at', '2024-10-14T15:08:05.426844Z'), ('updated_at', '2024-10-14T15:08:05.426859Z'), ('active', 0), ('created_by', 8), ('updated_by', None)])]
+"GET /api/get-campaigns?id=8 HTTP/1.1" 202 3671

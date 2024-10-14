@@ -8,6 +8,7 @@ logger = logging.getLogger("django")
 
 def processRecipientFile(recipientSheet, campaign):
     logger.info("Recipient file received ")
+    logger.info(recipientSheet)
 
     if recipientSheet.name.lower().endswith(".csv"):
         logger.info("File is a csv file ")
@@ -36,3 +37,5 @@ def processRecipientFile(recipientSheet, campaign):
             r += 1
             logger.info(recipientNumber+" processed")
         logger.info("Done")
+    else:
+        logger.info("Invalid file uploaded")
